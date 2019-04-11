@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
+      type="text/css"
+    />
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <title>Project CSS Design System</title>
+  </head>
+  <body>
+    <!-- Uses a transparent header that draws on top of the layout's background -->
+    <style>
+      .demo-layout-transparent {
+        background: url("./images/mahameru.jpg") center / cover;
+      }
+
+      .demo-layout-transparent .mdl-layout__header,
+      .demo-layout-transparent .mdl-layout__drawer-button {
+        /* This background is dark, so we set text to white. Use 87% black instead if
+         your background is light. */
+        color: white;
+      }
+    </style>
+
+    <div class="mdl-layout__container">
+      <div class="mdl-layout__container">
+        <div class="demo-layout-transparent mdl-layout mdl-js-layout">
+          <header class="mdl-layout__header mdl-layout__header--transparent">
+            <div class="mdl-layout__header-row">
+              <!-- Title -->
+              <span class="mdl-layout-title">Material</span>
+              <!-- Add spacer, to align navigation to the right -->
+              <div class="mdl-layout-spacer"></div>
+              <!-- Navigation -->
+              <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="./index.html">Home</a>
+              </nav>
+            </div>
+          </header>
+          <div class="mdl-typography--text-center mdl-typography--light">
+            <h1 class="mdl-typography--display-">
+              Hello!
+            </h1>
+            <h2 class="mdl-typography--display-1">
+              This is my Project using <strong>Material Design Lite</strong>
+            </h2>
+          </div>
+          <!-- Square card -->
+          <style>
+            .demo-card-square.mdl-card {
+              width: 320px;
+              height: 320px;
+            }
+
+            .demo-card-square > .mdl-card__title {
+              color: #fff;
+              background: url("../assets/demos/dog.png") bottom right 15%
+                no-repeat #46b6ac;
+            }
+          </style>
+
+          <!-- Wide card with share menu button -->
+          <style>
+            .demo-card-wide.mdl-card {
+              width: 512px;
+            }
+
+            .demo-card-wide > .mdl-card__title {
+              color: #fff;
+              height: 176px;
+              background: url("./images/rakum.jpg") center / cover;
+            }
+
+            .demo-card-wide > .mdl-card__menu {
+              color: #fff;
+            }
+          </style>
+
+          <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+            <div class="mdl-card__title">
+              <h2 class="mdl-card__title-text">Welcome</h2>
+            </div>
+            <div class="mdl-card__supporting-text">
+              Hello World!
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+              <a
+                class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+              >
+                Get Started
+              </a>
+            </div>
+            <div class="mdl-card__menu">
+              <button
+                class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect"
+              >
+                <i class="material-icons">share</i>
+              </button>
+            </div>
+          </div>
+
+          <footer class="mdl-mega-footer">
+            <div class="mdl-mega-footer__middle-section">
+              <div class="mdl-mega-footer__drop-down-section">
+                <input
+                  class="mdl-mega-footer__heading-checkbox"
+                  type="checkbox"
+                  checked
+                />
+                <h1 class="mdl-mega-footer__heading">Features</h1>
+                <ul class="mdl-mega-footer__link-list">
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Terms</a></li>
+                  <li><a href="#">Partners</a></li>
+                  <li><a href="#">Updates</a></li>
+                </ul>
+              </div>
+
+              <div class="mdl-mega-footer__drop-down-section">
+                <input
+                  class="mdl-mega-footer__heading-checkbox"
+                  type="checkbox"
+                  checked
+                />
+                <h1 class="mdl-mega-footer__heading">Details</h1>
+                <ul class="mdl-mega-footer__link-list">
+                  <li><a href="#">Specs</a></li>
+                  <li><a href="#">Tools</a></li>
+                  <li><a href="#">Resources</a></li>
+                </ul>
+              </div>
+
+              <div class="mdl-mega-footer__drop-down-section">
+                <input
+                  class="mdl-mega-footer__heading-checkbox"
+                  type="checkbox"
+                  checked
+                />
+                <h1 class="mdl-mega-footer__heading">Technology</h1>
+                <ul class="mdl-mega-footer__link-list">
+                  <li><a href="#">How it works</a></li>
+                  <li><a href="#">Patterns</a></li>
+                  <li><a href="#">Usage</a></li>
+                  <li><a href="#">Products</a></li>
+                  <li><a href="#">Contracts</a></li>
+                </ul>
+              </div>
+
+              <div class="mdl-mega-footer__drop-down-section">
+                <input
+                  class="mdl-mega-footer__heading-checkbox"
+                  type="checkbox"
+                  checked
+                />
+                <h1 class="mdl-mega-footer__heading">FAQ</h1>
+                <ul class="mdl-mega-footer__link-list">
+                  <li><a href="#">Questions</a></li>
+                  <li><a href="#">Answers</a></li>
+                  <li><a href="#">Contact us</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="mdl-mega-footer__bottom-section">
+              <div class="mdl-logo">Title</div>
+              <ul class="mdl-mega-footer__link-list">
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Privacy & Terms</a></li>
+              </ul>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
